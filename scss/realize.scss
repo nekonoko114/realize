@@ -1,0 +1,399 @@
+$color-main : #8FCCE6;
+$width-layout : 1280px;
+
+$bg__color-main : #dcdcdc;
+$bg__color-sub : #fffafa;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+
+
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color : #333;
+    padding: 0;
+    margin: 0;
+  }
+
+h1,h2,h3.h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+p,ul,li,dl,dt,dd{
+    padding: 0;
+    margin: 0;
+}
+
+.inner {
+    margin: 0 auto;
+    width: $width-layout;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+//---------------------共通-------------------------------------------
+.section__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+
+//-------------------------header------------------------------------
+.header {
+    background: $color-main;
+    height: 100px;
+}
+
+.header__wrapper {
+    display: flex;
+    line-height: 100px;
+    padding: 0 40px;
+}
+
+.header__left{
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+    margin-left: 24px;
+    font-family: 'Kalam', cursive;
+    font-family: 'Reggae One', cursive;
+}
+    
+    .header__nav {
+            display: flex;
+            margin: 0 20px 0 auto;
+        li {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            a{
+                margin-left: 40px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                line-height: 1.5;
+                color: #fff;
+                padding-right: 24px;
+                transition: 0.6s;
+                
+                &:hover {
+                    color: red;
+                }
+            }
+            
+        }
+    }
+
+//--------------------------corporate------------------------------
+
+.corporate {
+    background: url("../img/rearize__header.jpg") center center / cover;
+    height: 600px;
+    opacity: 0.8;
+    position: relative;
+}
+
+.corporate__wrapper {
+    
+}
+
+.corporate__textarea {
+    position : absolute;
+    left: 35%;
+    bottom : 30%;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    font-family: 'Reggae One', cursive;
+    letter-spacing: 2rem;
+}
+
+.corporate___title {
+    text-shadow:  2px 2px 2px #333;
+}
+
+.corporate__text {
+    text-shadow:  2px 2px 2px #333;
+    
+}
+
+//--------------------------about------------------------------
+
+.about {
+    background : $bg__color-main;
+    padding: 60px 0 60px;
+
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__left {
+    width: 48%;
+    margin-right: 40px;
+    img {
+
+    box-shadow: 2px 2px 4px 1px #333;
+    border-radius : 4%;
+    }
+}
+
+.about__right {
+    width: 48%;
+    h3 {
+        border-bottom: solid 3px #333;
+        font-weight: bold;
+
+    }
+
+    p {
+        letter-spacing: 1px;
+    }
+}
+
+//---------------------------recruitment-----------------------------
+.recruitment {
+    background: $bg__color-sub;
+    padding: 60px 0 120px;
+}
+
+.recruitment__wrapper {
+    display: flex;
+}
+
+.recruitment__left {
+    width: 30%;
+    h3 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        position:relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0%;
+            width: 80%;
+            height: 4px;
+            background: #0000cd;
+        }
+        
+    }
+    p {
+        border-bottom: 2px dashed #333;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+.recruitment__right {
+    width: 60%;
+    margin: 0 auto;
+    img {
+        box-shadow: -5px 2px 3px 3px #c0c0c0;
+        border-radius : 4px;
+    }
+
+}
+
+//---------------------------access-----------------------------
+
+.access {
+    background: $bg__color-main;
+    padding: 60px 0 ;
+}
+
+.access__wrapper {
+    margin: 0 auto;
+
+    dl {
+        display: flex;
+        font-size: 24px;
+    }
+
+    dt {
+        width: 100px;
+        margin-left: 150px;
+        margin-top: 20px;
+
+    }
+
+    dd {
+        width : calc(100% - 100px);
+        margin-top: 20px;
+    }
+
+    p {
+        margin-left: 150px;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.access__map {
+    width: 1000px;
+    max-width : 1000px;
+    margin: 0 auto; 
+    iframe {
+        width:1000px;
+        max-width: 1000px;
+    }
+}
+
+//---------------------------access-----------------------------//
+
+//---------------------------contact-----------------------------
+
+
+.contact {
+    background: $bg__color-sub;
+    padding: 60px 0;
+}
+
+.contact__wrapper {
+
+}
+
+.contact__form {
+    width: 900px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact__type {
+    
+    dl {
+        display: flex;
+        margin-top: 48px;
+    }
+}
+
+.contact__label {
+    width: 240px;
+    margin-top: 8px;
+    label {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content : '必須';
+            width: 50px;
+            margin-left: 20px;
+            color: #fff;
+            background: #f00;
+            text-align: center;
+            border-radius: 10%;
+
+        }
+    }
+}
+
+.contact__input {
+    width: calc(100% - 240px);
+    input[type="text"] {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 4px;
+        border: 1px solid #333;
+        box-shadow: 1px 0 6px rgb(184, 170, 170);
+    }
+
+    input[type="email"]{
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 4px;
+        box-shadow: 1px 0 6px rgb(184, 170, 170);
+        border: 1px solid #333;
+    }
+
+    input[type="tell"]{
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 4px;
+        box-shadow: 1px 0 6px rgb(184, 170, 170);
+        border: 1px solid #333;
+    }
+
+    input[type="radio"] {
+        margin-right: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 4px;
+        box-shadow: 1px 0 6px rgb(184, 170, 170);
+        border: 1px solid #333;
+    }
+}
+
+.contact__form__button {
+    text-align: center;
+    margin-top: 36px;
+    
+}
+
+.contact__form__button [type="submit"] {
+    width: 304px;
+    height: 56px;
+    border-radius : 4px;
+    font-family: inherit;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgb(89, 103, 230) url(../img/button-arrow.png) no-repeat right 12px center / 17px 16px;
+    cursor: pointer;
+    transition : 0.3s;
+    position: relative;
+
+    &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        transition: .3s;
+        box-shadow: 0 2px 4px #1e282c;
+    }
+
+    &:active {
+        background-color: #00f;
+        transform: translateY(0);
+    }
+}
+
+
+//---------------------------contact-----------------------------
+
+//---------------------------footer-----------------------------
+
+.footer {
+    background: $color-main;
+    text-align: center;
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Festive', cursive;
+}

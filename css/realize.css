@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3.h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p, ul, li, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.header {
+  background: #8FCCE6;
+  height: 100px;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 100px;
+  padding: 0 40px;
+}
+
+.header__left {
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+  margin-left: 24px;
+  font-family: 'Kalam', cursive;
+  font-family: 'Reggae One', cursive;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20px 0 auto;
+}
+
+.header__nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav li a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  padding-right: 24px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.header__nav li a:hover {
+  color: red;
+}
+
+.corporate {
+  background: url("../img/rearize__header.jpg") center center/cover;
+  height: 600px;
+  opacity: 0.8;
+  position: relative;
+}
+
+.corporate__textarea {
+  position: absolute;
+  left: 35%;
+  bottom: 30%;
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
+  font-family: 'Reggae One', cursive;
+  letter-spacing: 2rem;
+}
+
+.corporate___title {
+  text-shadow: 2px 2px 2px #333;
+}
+
+.corporate__text {
+  text-shadow: 2px 2px 2px #333;
+}
+
+.about {
+  background: #dcdcdc;
+  padding: 60px 0 60px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__left {
+  width: 48%;
+  margin-right: 40px;
+}
+
+.about__left img {
+  -webkit-box-shadow: 2px 2px 4px 1px #333;
+          box-shadow: 2px 2px 4px 1px #333;
+  border-radius: 4%;
+}
+
+.about__right {
+  width: 48%;
+}
+
+.about__right h3 {
+  border-bottom: solid 3px #333;
+  font-weight: bold;
+}
+
+.about__right p {
+  letter-spacing: 1px;
+}
+
+.recruitment {
+  background: #fffafa;
+  padding: 60px 0 120px;
+}
+
+.recruitment__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recruitment__left {
+  width: 30%;
+}
+
+.recruitment__left h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+}
+
+.recruitment__left h3::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0%;
+  width: 80%;
+  height: 4px;
+  background: #0000cd;
+}
+
+.recruitment__left p {
+  border-bottom: 2px dashed #333;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.recruitment__right {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.recruitment__right img {
+  -webkit-box-shadow: -5px 2px 3px 3px #c0c0c0;
+          box-shadow: -5px 2px 3px 3px #c0c0c0;
+  border-radius: 4px;
+}
+
+.access {
+  background: #dcdcdc;
+  padding: 60px 0;
+}
+
+.access__wrapper {
+  margin: 0 auto;
+}
+
+.access__wrapper dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+}
+
+.access__wrapper dt {
+  width: 100px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.access__wrapper dd {
+  width: calc(100% - 100px);
+  margin-top: 20px;
+}
+
+.access__wrapper p {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.access__wrapper p a {
+  text-decoration: none;
+}
+
+.access__map {
+  width: 1000px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.access__map iframe {
+  width: 1000px;
+  max-width: 1000px;
+}
+
+.contact {
+  background: #fffafa;
+  padding: 60px 0;
+}
+
+.contact__form {
+  width: 900px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact__type dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+}
+
+.contact__label {
+  width: 240px;
+  margin-top: 8px;
+}
+
+.contact__label label {
+  position: relative;
+}
+
+.contact__label label::after {
+  position: absolute;
+  content: '必須';
+  width: 50px;
+  margin-left: 20px;
+  color: #fff;
+  background: #f00;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.contact__input {
+  width: calc(100% - 240px);
+}
+
+.contact__input input[type="text"] {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #333;
+  -webkit-box-shadow: 1px 0 6px #b8aaaa;
+          box-shadow: 1px 0 6px #b8aaaa;
+}
+
+.contact__input input[type="email"] {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 0 6px #b8aaaa;
+          box-shadow: 1px 0 6px #b8aaaa;
+  border: 1px solid #333;
+}
+
+.contact__input input[type="tell"] {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 0 6px #b8aaaa;
+          box-shadow: 1px 0 6px #b8aaaa;
+  border: 1px solid #333;
+}
+
+.contact__input input[type="radio"] {
+  margin-right: 20px;
+}
+
+.contact__input textarea {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 0 6px #b8aaaa;
+          box-shadow: 1px 0 6px #b8aaaa;
+  border: 1px solid #333;
+}
+
+.contact__form__button {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.contact__form__button [type="submit"] {
+  width: 304px;
+  height: 56px;
+  border-radius: 4px;
+  font-family: inherit;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background: #5967e6 url(../img/button-arrow.png) no-repeat right 12px center/17px 16px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.contact__form__button [type="submit"]:hover {
+  opacity: 0.9;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0 2px 4px #1e282c;
+          box-shadow: 0 2px 4px #1e282c;
+}
+
+.contact__form__button [type="submit"]:active {
+  background-color: #00f;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.footer {
+  background: #8FCCE6;
+  text-align: center;
+  padding: 24px 0;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Festive', cursive;
+}

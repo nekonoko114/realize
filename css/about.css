@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.corporate {
+  background: url(../img/realize__about__corporate.jpg) no-repeat center center/cover;
+}
+
+.corporate__textarea {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-family: serif;
+  text-align: center;
+}
+
+.corporate__textarea p {
+  margin-top: 20px;
+}
+
+.section__title {
+  padding-bottom: 0;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 64px;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #b0c4de;
+}
+
+.recruitment__nav {
+  text-align: center;
+}
+
+.recruitment__nav ul {
+  width: 500px;
+  padding: 20px 0 20px;
+}
+
+.recruitment__nav li {
+  list-style-type: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: oblique;
+}
+
+.recruitment__message {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.recruitment__message span {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.recruitment__message span a {
+  color: #f00;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+.recruitment__message span a:hover {
+  color: #333;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.recruitment__message span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #f00;
+  left: 0;
+  bottom: -8px;
+}
